@@ -1,0 +1,66 @@
+.more-easy{
+    padding: 41px 0px 0px 24px;
+    background: var(--moreEasyBg);
+    @include min-width($medium_size){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+    }
+    @include min-width($x-large_size){
+        padding: 41px 0 0px 69px;
+    }
+
+    .more-easy__img{
+        position: relative;
+        height: 459px;
+        width:100%;
+        min-width: 300px;
+        max-width: 446px;
+        @include min-width($medium_size){
+            width:100%;
+        }
+        @include min-max-width(0,$large_size){
+            margin-bottom: 30px;
+        }
+        @include min-width($large_size){
+            min-height: 630px;
+        }
+        @include min-width($x-large_size){
+           min-width: 630px;
+        }
+        picture{
+            @extend %absolute_Picture;
+        }
+    }
+
+    /// content
+    /// 
+    
+    .more-than__content{
+        font-size: 18px;
+        h2{
+            @extend %section-title;
+            margin-bottom: 21px;
+            max-width: 350px;
+            @include min-width($small_size){
+                max-width: 600px;
+            }
+        }
+        p{
+            margin-bottom: 30px;
+            line-height: 28px;
+            max-width: 690px;
+        }
+
+        .download{
+            .google-play{
+                
+            }
+            .app-store{
+
+            }
+        }
+    }
+}

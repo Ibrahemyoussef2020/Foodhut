@@ -1,0 +1,123 @@
+footer{
+    padding: 116px 24px 27px;
+    background: var(--lightColor);
+    .copy-right{
+        text-align: center;
+    }
+
+    @include min-width($x-large_size){
+        padding: 152px  135px 38px;
+    }
+
+    .links{
+        margin-bottom: 80px;
+
+        @include min-width($large_size){
+            display: flex;
+            gap: 100px;
+            margin-bottom: 92px;
+        }
+
+        .links__intro{
+            margin-bottom: 30px;
+            max-width: 325px;
+            h2{
+                font-size: 36px;
+                font-weight: 700;
+                margin-bottom: 10px;
+                color: var(--tomatoColor);
+            }
+            p{
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 23px;
+                max-width: 300px
+            }
+            .social{
+                display: flex;
+                align-items: center;
+                gap: 27px;
+            }
+        }
+
+        /// content
+        /// 
+            
+        .links__content{
+            h3{
+                font-size: 24px;
+                font-weight: 700;
+                color:var(--tomatoColor);
+            }
+            .lists{
+                display: flex;
+                gap: 80px;
+
+                h3{
+                    margin-bottom: 17px;
+                }
+
+                ul{
+                    min-width: 95px;
+
+                    li{
+                        margin-bottom: 14px;
+                    }
+                }  
+
+                @include min-width($large_size){
+                    gap: 99px;
+                }
+            }
+
+            @include min-width($medium_size){
+                display: flex;
+                gap: 94px;
+            }
+
+            /// contact
+            /// 
+            
+            .contact{
+                max-width: 379px;
+
+                h3{
+                    margin-bottom: 37px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-bottom: 27px;
+                }
+                form{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    input{
+                        border: none;
+                        outline: none;
+                        border-radius: 50px;
+                        width: 205px;
+                        height: 50px;
+                        padding-left: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        background: #eee;
+                    }
+                    button{
+                        border-radius: 50px;
+                        width: 118px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: var(--lightColor);
+                        background: var(--tomatoColor);
+                    }
+                }
+            }
+            
+        }
+    }
+}

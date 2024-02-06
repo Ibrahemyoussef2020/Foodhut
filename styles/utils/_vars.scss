@@ -1,0 +1,64 @@
+/// media query variables
+/// 
+
+$mobile_size : 0px;
+$small_size  : 570px;
+$medium_size : 767px;
+$large_size : 1024px;
+$x-large_size : 1290px;
+$double-x-large_size : 1400px;
+
+$mobile : 'mobile';
+$small  : 'small';
+$medium  : 'medium';
+$large : 'large';
+$x-large :'x-large';
+$double-x-large : '2x-large';
+
+/// animation variables
+/// 
+
+$visible:'visibe';
+$hidden:'hidden';
+
+$visible_animation:.3s ease-in .1s 1 alternate forwards running visible-img;
+$hidden_animation:.3s ease-in .1s 1 alternate forwards running hidden-img;
+
+/// colors
+/// 
+
+$darkHeroColor:linear-gradient(90deg, #34271d, #140f0f, #140f0f, #1e1814, #222, #34271d, #222);
+$lightHeroColor:linear-gradient(45deg ,#fffdfd,#fffaf7,#fff7f0,#fff3e8,#feeada);
+$lightMenuColor:linear-gradient(to top , #fee6e6 , #fef0f0 , #fffbfb);
+$darkMenuColor:linear-gradient(to top , #684e4e , #483d3d , #2e2b2b);
+
+//$lightGragientColor:
+
+
+/// css mode variabels
+/// 
+
+.light{
+    --darkColor:#191919;
+    --lightColor:#fff;
+    --tomatoColor:#F54748;
+    --orangeColor-200:#d56d6533;
+    --orangeColor-300:#FFC26B;
+    --labelColor:#f8e4cd;
+    --heroBgColor:linear-gradient(45deg ,#fffdfd,#fffaf7,#fff7f0,#fff3e8,#feeada);
+    --menuBgColor:linear-gradient(to top , #fee6e6 , #fef0f0 , #fffbfb);
+    --moreEasyBg:linear-gradient(to top , #fff9ef ,#fffefd );
+    --menuBorderColor:#b82d0114;
+}
+
+.dark{
+    --darkColor:#fff;
+    --lightColor:#191919;
+    --tomatoColor:#F54748;
+    --orangeColor-200:#FDC55E;
+    --orangeColor-300:#FFC26B;
+    --heroBgColor:linear-gradient(90deg, #34271d, #140f0f, #140f0f, #1e1814, #222, #34271d, #222);
+    --moreEasyBg:linear-gradient(to top ,#34271d,#140f0f,#140f0f  );
+    --labelColor:#2d1818;
+    --menuBgColor:linear-gradient(to top , #684e4e , #483d3d , #2e2b2b);
+}

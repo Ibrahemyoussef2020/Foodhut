@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding:0;
+    color:var( --darkColor);
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    font-weight: 500;
+    min-height: 4000px;
+    background: var(--lightColor);
+
+    scroll-behavior: smooth;
+    transition: scroll .3s linear;
+}
+
+.home{
+    max-width: 100%;
+    overflow: hidden;
+    background: var(--lightColor);
+}
+
+body,*,*::before,*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    color: var( --darkColor);
+
+    scroll-behavior: smooth;
+    transition: scroll .3s linear;
+    margin: 0;
+    padding: 0;
+}
+
+.light .dark-img{
+    animation: $hidden_animation;
+}
+.light .light-img{
+    animation: $visible_animation;
+}
+
+.dark .light-img{
+    animation: $hidden_animation;
+}
+.dark .dark-img{
+    animation: $visible_animation;
+}
+
+picture{
+    display: block;
+}
+
+img{
+    display: block;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    margin-block-start:0;
+    margin-block-end:0;
+    padding-inline-start: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    font-weight: 500;
+}
+
+@include visibility-moving($hidden,100%);
+@include visibility-moving($visible,100%);

@@ -1,0 +1,106 @@
+.more-than{
+    padding: 21px 0px 120px ;//24px;
+    background: var(--lightColor);
+    @include min-width($medium_size){
+        display: flex;
+        align-items: center;
+       
+    }
+    @include min-width($large_size){
+        gap: 70px;
+    }
+    @include min-width($x-large_size){
+        padding: 41px 0px 212px; //69px;
+    }
+
+    .more-than__img{
+        position: relative;
+        height: 459px;
+        width:100%;
+        min-width: 300px;
+        max-width: 446px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        @include min-max-width($small_size , $large_size){
+            margin-top: 50px;
+        }
+
+        .more-than-arrow{
+            position: absolute;
+            top: 13px;
+            right: -291px;
+            z-index: 1000;
+            display: none;
+
+            @include min-width($x-large_size){
+                display: block;
+            }
+        }
+     
+        @include min-width($large_size){
+            height: 620px;
+            min-width: 530px;
+        }
+        @include min-max-width(0,$large_size){
+            margin-bottom: 64px;
+        }
+        picture{
+            @extend %absolute_Picture;
+        }
+    }
+
+    .more-than__content{
+        font-size: 18px;
+        padding-left: 24px;
+        padding-right: 24px;
+
+        @include min-width($x-large_size){
+            padding-top: 7rem;
+        }
+        h2{
+            @extend %section-title;
+            margin-bottom: 21px;
+            max-width: 300px;
+            @include min-width($small_size){
+                max-width: 450px;
+            }
+        }
+        p{
+            margin-bottom: 82px;
+            line-height: 28px;
+            max-width: 690px;
+
+            @include min-width($medium_size){
+                margin-bottom: 30px;
+            }
+        }
+        .services{
+            @include min-width($small_size){
+                display: flex;
+                gap: 24px; 
+            }
+            @include min-width($x-large_size){
+                gap: 89px;
+            }
+            ul{
+                margin-bottom: 30px;
+
+                li{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                }
+                li:not(:last-child){
+                    margin-bottom: 29px;
+                }
+            }
+
+        }
+
+        button{
+            @include customBtn(114px)
+        }
+    }
+}

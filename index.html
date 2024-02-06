@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="improve your site">
+    <!-------- fonts ---------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet">
+    <!-------- end fonts ---------->
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <script defer src="./script.js" ></script>
+
+    <title>Improve your site</title>
+</head>
+<body>
+<section class="hero">
+    <header>
+        <div class="logo">
+            <picture class="light-img">
+                <source media="(min-width:1024px)" srcset="./images/logo-l-pc.png">
+                <img class="light-img" src="./images/logo-l-mob.png" alt="logo">
+            </picture>
+            <picture class="dark-img">
+                <source media="(min-width:1024px)" srcset="./images/logo-d-pc.png">
+                <img class="dark-img" src="./images/logo-d-mob.png" alt="logo">
+            </picture>
+
+            <div class="drop-arrow-wrapper">
+                <img src="./images/drop-arrow.png" alt="">
+            </div>
+        </div>
+        <nav>
+            <ul class="nav__list up">
+                <li>
+                    <a href="#offers">Today special offers</a>
+                </li>
+                <li>
+                    <a href="#why-us">Why FoodHut</a>
+                </li>
+                <li>
+                    <a href="#menu">Our Menu</a>
+                </li>
+                <li>
+                    <a href="#popular-food">Our Popular food</a>
+                </li>
+                <li>
+                    <button id="mode">
+                        <span><span class="type-mode"></span> MODE</span> 
+                    </button>
+                </li>
+            </ul>
+            <button class="nav__btn">
+                    <img class="dark-img" src="./images/nav-btn-d.png" alt="nav links">
+                    <img class="light-img" src="./images/nav-btn-l.png" alt="nav links">
+            </button>
+        </nav>
+    </header>
+
+    <div class="hero__main">
+
+        <a href="#copy-right" class="drop-slider">
+            <img src="./images/slider.png" alt="Browse">
+        </a>
+
+        <div class="hero__img">
+            <picture>
+                <source class="dark-img" media="(min-width:1024px)" srcset="./images/hero-d-pc.png">
+                <img class="dark-img" src="./images/hero-d-mob.png" alt="">
+            </picture>
+            <picture>
+                <source class="light-img" media="(min-width:1024px)" srcset="./images/hero-l-pc.png">
+                <img class="light-img" src="./images/hero-l-mob.png" alt="">
+            </picture>
+        </div>
+        <div class="hero__content">
+            <div class="browsering">
+                <p class="trust">
+                    <img src="./images/small-heart.png" alt="">
+                    <span> People Trust us</span>
+                </p>
+
+                <a href="#copy-right">
+                    <img src="./images/browsering-arrow.png" alt="Get down">
+                </a>
+            </div>
+            <h2 class="serious">
+                We're <span class="tomato">Serious</span> For <span class="tomato">Food</span> & <span class="lined"><span class="orange">Delivery</span>.<img src="./images/delivery-underline.png" alt="_________"> </span>
+            </h2>
+            <p class="content">
+                Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.
+            </p>
+            <div class="search">
+                <span class="search__icon">
+                    <picture>
+                        <img class="light-img" src="./images/search-icon-l.png" alt="">
+                    </picture>
+                    <picture>
+                        <img class="dark-img" src="./images/search-icon-d.png" alt="">
+                    </picture>
+                </span>
+                <input type="text" placeholder="Search food">
+                <button class="search__btn">
+                    <img src="./images/search-logo.png" alt="">
+                </button>
+            </div>
+
+            <div class="app">
+                <button class="download">
+                    Downlode App
+                </button>
+                <button class="play">
+                    <img src="./images/play.png" alt="" srcset="">
+                </button>
+                <p class="watch">
+                    Watch Video
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<main class="home">
+    <section class="offers" id="offers">
+        <div class="offers__before">
+            <img src="./images/today-absolute-top.png" alt="">
+        </div>
+        <div class="offers__after">
+            <img src="./images/today-absolute-bottom.png" alt="">
+        </div>
+
+        <div class="offers__intro">
+            <h2>
+                Today <span class="tomato">special</span> offers
+            </h2>
+            <p>
+              <span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+              </span>
+            </p>
+        </div>
+
+        <div class="offers__slider">
+            <div class="track">
+                <div class="thumb">
+                    <article class="slide">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/offer-1.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/offer-2.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-2.png" alt="Ali">
+                                        <img src="./images/people-1.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/offer-3.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-3.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-1.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="slide">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/offer-4.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="more-than" id="why-us">
+        <div class="more-than__img">
+            <img src="./images/more-than-arrow.png" alt="" class="more-than-arrow">
+            <picture class="light-img">
+                <source media="(min-width:1024px)" srcset="./images/mor-than-l-pc.png">
+                <img class="light-img" src="./images/more-than-l-mob.png" alt="">
+            </picture>
+            <picture class="dark-img" >
+                <source media="(min-width:1024px)" srcset="./images/mor-than-d-pc.png">
+                <img class="dark-img" src="./images/more-than-d-mob.png" alt="">
+            </picture>
+        </div>
+        <div class="more-than__content">
+            <h2>
+                We are <span class="tomato">more </span> than <span class="orange">multiple </span>service. 
+            </h2>
+            <p>
+                This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food
+            </p>
+            <div class="services">
+                <ul>
+                    <li>
+                        <img src="./images/service-1.png" alt="">
+                        <span>Online Order</span>
+                    </li>
+                    <li>
+                        <img src="./images/service.png" alt="">
+                        <span>Pre-Reservation</span>
+                    </li>
+                    <li>
+                        <img src="./images/service.png" alt="">
+                        <span>Super Chef</span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <img src="./images/service-2.png" alt="">
+                        <span>24/7 Service</span>
+                    </li>
+                    <li>
+                        <img src="./images/service.png" alt="">
+                        <span>Oragonized Foodhut Place</span>
+                    </li>
+                    <li>
+                        <img src="./images/service.png" alt="">
+                        <span>Clean Kitchen</span>
+                    </li>
+                </ul>
+            </div>
+            <button>About Us</button>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div  class="menu__content">
+            <h2>
+                <span class="tomato">Menu </span> that <br/> <span class="orange">always </span>make <br/> you fall in <span class="tomato">love</span>
+           </h2>
+        </div>
+        <div class="menu__slider">
+            <div class="track">
+                <div class="thumb">
+                    <button class="active">Ramen</button>  
+                    <button>Breakfast</button>  
+                    <button>Lunch</button>  
+                    <button>Dinner</button>  
+                    <button>Maxican</button>  
+                    <button>Italian</button>
+                    <button>Desserts</button>
+                    <button>Drinks</button>              
+                </div>
+            </div>
+        </div>
+        <div class="menu__items">
+            <div class="track">
+                <div class="thumb">
+                    <article class="menu__item">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/menu-1.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="menu__item">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/menu-2.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="menu__item">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/menu-3.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="menu__item">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/menu-4.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="menu__item">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/menu-5.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="menu__item">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/menu-6.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="menu__item">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/menu-7.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                    <article class="menu__item">
+                        <div>
+                            <div class="slider__img">
+                                <img class="frame" src="./images/menu-frame.png" alt="">
+                                <img src="./images/menu-8.png" alt="meet">
+                                <span class="price">10$</span>
+                            </div>
+                            <div class="slide__ratings">
+                                <div class="ratings">
+                                    <div class="people">
+                                        <img src="./images/people-1.png" alt="Ali">
+                                        <img src="./images/people-2.png" alt="Dalia">
+                                        <img src="./images/people-3.png" alt="Sara">
+                                    </div>
+                                    <img src="./images/star.png" alt="Rate" class="rate-star">
+                                    <span class="rate-value">(4.5)</span>
+                                </div>
+                            </div>
+                            <div class="slider__content">
+                                <h3>Kebab</h3>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                </p>
+                            </div>
+                            <button class="order">Order now</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="more-easy" id="popular-food">
+        <div class="more-easy__img">
+            <picture class="light-img">
+                <source media="(min-width:1024px)" srcset="./images/more-easy-l-pc.png">
+                <img class="light-img" src="./images/more-easy-l-mob.png" alt="">
+            </picture>
+            <picture class="dark-img" >
+                <source media="(min-width:1024px)" srcset="./images/more-easy-d-pc.png">
+                <img class="dark-img" src="./images/more-easy-d-mob.png" alt="">
+            </picture>
+        </div>
+        <div class="more-than__content">
+            <h2>
+                It's Now <span class="tomato">More Easy </span> to <span class="orange"> Order </span> by Our Mobile <span class="tomato">App</span>
+            </h2>
+            <p>
+                This is a type of resturent which typically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes frome the rench word meaning food
+            </p>
+            <div class="download">
+                <button class="google-play">
+                    <picture class="light-img">
+                        <img class="light-img" src="./images/google-play-l.png" alt="">
+                    </picture>
+                    <picture class="dark-img" >
+                        <img class="dark-img" src="./images/google-play-d.png" alt="">
+                    </picture>
+                </button>
+                <button class="app-store">
+                    <picture class="light-img">
+                        <img class="light-img" src="./images/app-store-l.png" alt="">
+                    </picture>
+                    <picture class="dark-img" >
+                        <img class="dark-img" src="./images/app-store-d.png" alt="">
+                    </picture>
+                </button>
+            </div>
+        </div>    
+    </section>
+</main>
+<footer>
+    <div class="links">
+        <div class="links__intro">
+            <h2>Foodhut</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            </p>
+            <div class="social">
+                <a href="#"><img src="./images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="./images/instagram.png" alt="Instgram"></a>
+                <a href="#"><img src="./images/Twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="links__content">
+            <div class="lists">
+                <div class="list list--one">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Service Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Company</a></li>
+                    </ul>
+                </div>
+                <div class="list list--one">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">Partnership</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Get in touch</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+                <form action="#">
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <p class="copy-right" id="copy-right">Copyright © 2022 Foodhut.</p>
+</footer>
+</body>
+</html>    

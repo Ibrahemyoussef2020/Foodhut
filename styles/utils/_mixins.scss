@@ -1,0 +1,91 @@
+/// media queury min-width
+/// 
+
+@mixin min-width($size){
+    @media (min-width:$size){@content;}
+}
+
+/// media queury min-max-width
+/// 
+
+@mixin min-max-width($from,$to){
+   $limit:calc($to - 1px); 
+   @media only screen and (min-width:$from) and (max-width:$limit) {@content;}
+}
+
+/// preformans
+/// 
+
+@mixin ability($prop,$value){
+    -webkit-#{$prop} : $value;
+    -moz-#{$prop} : $value;
+    -o-#{$prop} : $value;
+    $prop : $value;
+}
+
+/// mode animation
+/// 
+
+
+@mixin visibility-moving($visibility,$height){
+    
+    @if $visibility == $hidden {
+        
+        @keyframes hidden-img{
+            from{
+                transform: scale3d(1,1,1);
+                height:$height;
+            }
+            to{
+                transform: scale3d(1,0,1);
+                height: 0 !important;
+            }
+        }
+    }
+    
+    @else if $visibility == $visible {
+        @keyframes visible-img{
+            from{
+                transform: scale3d(1,0,1);
+                height: 0;
+            }
+            to{
+                transform: scale3d(1,1,1);
+                height:$height;
+            }
+        }
+    }
+}
+
+
+///images sizes
+///
+
+
+@mixin img-parent-height($small,$large,$media){
+    height: $small;
+    @include min-width($media){
+        height: $large;
+    }
+}
+@mixin img-parent-width($small,$large,$media){
+    width: $small;
+    @include min-width($media){
+        width: $large;
+    }
+}
+
+///custom Button
+///
+
+@mixin customBtn($width){
+    width: $width;
+    height: 45px;
+    background: #F54748;
+    color:var(--lightColor);
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
