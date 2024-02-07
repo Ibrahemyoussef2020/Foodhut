@@ -55,6 +55,22 @@ navBtn.addEventListener('click' , e =>{
 
 })
 
+navList.addEventListener('click' , e =>{
+    if (navList.classList.contains('up')) {
+
+        navList.classList.remove('up')
+        navList.classList.add('dowen')
+
+    }else if(navList.classList.contains('dowen')){
+
+        navList.classList.remove('dowen')
+        navList.classList.add('up')
+
+    }
+
+})
+
+
 window.addEventListener('scroll' , ()=>{
     console.log('d');
     if (root.scrollTop  > 70) {
