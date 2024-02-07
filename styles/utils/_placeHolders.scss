@@ -15,11 +15,19 @@ $indexs : 1,2,3;
         padding-top: 110px;
         position: relative;
         z-index: 2;
-        left: -10px;
+        left: -58px;
         background-image:var(--menuBgColor);
         border-radius: 20px;
         border: 1px solid #f4433636;
-        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
+
+        @include min-width(380px){
+            left: -45px;
+        }
+        @include min-width(400px){
+            left: -16px;
+        }
       
         .slider__img{
             position: absolute;

@@ -41,11 +41,17 @@
   padding-top: 110px;
   position: relative;
   z-index: 2;
-  left: -10px;
+  left: -55px;
   background-image: var(--menuBgColor);
   border-radius: 20px;
   border: 1px solid rgba(244, 67, 54, 0.2117647059);
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 400px) {
+  .menu .menu__items .track .thumb .menu__item > div, .offers .offers__slider .slide > div {
+    left: -16px;
+  }
 }
 .menu .menu__items .track .thumb .menu__item > div .slider__img, .offers .offers__slider .slide > div .slider__img {
   position: absolute;
@@ -632,7 +638,7 @@ p {
 }
 .offers .offers__after {
   position: absolute;
-  bottom: -30px;
+  bottom: -25px;
   right: -29px;
   z-index: 1;
 }

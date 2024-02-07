@@ -19,7 +19,7 @@
 
     .offers__after{
         position: absolute;
-        bottom: -30px;
+        bottom: -25px;
         right: -29px;
         z-index: 1;
         @include min-width($large_size){
