@@ -202,9 +202,14 @@ body {
 }
 
 .home {
-  max-width: 100%;
+  width: 100%;
   overflow: hidden;
   background: var(--lightColor);
+}
+
+.home, .hero, footer {
+  max-width: 1440px;
+  margin: auto;
 }
 
 body, *, *::before, *::after {
