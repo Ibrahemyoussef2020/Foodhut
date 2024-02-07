@@ -41,12 +41,17 @@
   padding-top: 110px;
   position: relative;
   z-index: 2;
-  left: -55px;
+  left: -58px;
   background-image: var(--menuBgColor);
   border-radius: 20px;
   border: 1px solid rgba(244, 67, 54, 0.2117647059);
   margin-right: auto;
   margin-left: auto;
+}
+@media (min-width: 380px) {
+  .menu .menu__items .track .thumb .menu__item > div, .offers .offers__slider .slide > div {
+    left: -45px;
+  }
 }
 @media (min-width: 400px) {
   .menu .menu__items .track .thumb .menu__item > div, .offers .offers__slider .slide > div {
@@ -564,6 +569,7 @@ p {
 .hero .hero__main .hero__content .app {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 378px;
 }
 .hero .hero__main .hero__content .app .download {
